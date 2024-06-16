@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de Empleados</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Empleados</h1>
+    <ul>
+        {% for empleado in empleados %}
+            <!-- Asegúrate de que el atributo href construye la URL correctamente para la ruta de actualización -->
+            <li><a href="{{ url_for('update', dni=empleado[1]) }}">{{ empleado[0] }} - DNI: {{ empleado[1] }} - {{ empleado[2] }} - {{ empleado[3] }}</a></li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

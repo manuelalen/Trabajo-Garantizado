@@ -1,0 +1,67 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    background: #f4f4f9;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+h1 {
+    color: #024959;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background: linear-gradient(145deg, #6db3f2, #1e69de);
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+
+a:hover {
+    background-color: #1a5aaa;
+    transition: background-color 0.3s ease;
+}
+
+/* Estilos para la página de actualización */
+form {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+input[type="number"], button {
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    display: block;
+    width: 95%;
+}
+
+button {
+    background: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #45a049;
+    transition: background 0.3s ease;
+}
+
+label {
+    margin-top: 20px;
+}

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Actualizar Cantidad</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Actualizar Cantidad para DNI {{ dni }}</h1>
+    <form method="POST">
+        <label for="cuantia">Nueva Cantidad a Añadir:</label>
+        <input type="number" id="cuantia" name="cuantia" step="0.01" required>
+        <button type="submit">Actualizar</button>
+    </form>
+</body>
+</html>
